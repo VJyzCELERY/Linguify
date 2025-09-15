@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linguify</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <link rel="stylesheet" href="./css/gesture.css">
+</head>
+<body>
+    
+    <div class="maincontainer">
+        <div class="top">
+            <div class="title">
+                <h1 class="title_text" style="font-family:Arial;">Linguify</h1>
+            </div>
+
+            <div id="webcamContainer" class="cameracontainer">
+                <video id="webcam" class="camera" autoplay></video>
+            </div>
+            
+        </div>
+
+        <div class="text_container">
+            <div class="container">
+                <div class="text">
+                    <span class="textout">Waiting for gesture...</span>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <a href="./index.html">
+                <button class="voicenavigation" >
+                    
+                    <p class="voicenavigationtext" style="font-weight:bold;">VOICE RECOGNITION</p>
+                    
+                </button>
+            </a>
+        </div>
+        
+    </div>
+    <canvas id="canvas" style="display:none;"></canvas> 
+
+    <script src="./js/gesture.js" defer></script>
+
+</body>
+</html>

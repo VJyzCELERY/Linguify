@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding:0;
+}
+body {
+    
+    background-color:rgb(96, 96, 96);
+    color: black;
+    font-family:'Gill Sans MT';
+    /* font-family:'Lucida Sans'; */
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.text-display {
+    white-space: pre-wrap;
+    font-size: 16px;
+}
+
+.text{
+    padding-top:15px;
+    padding-bottom:15px;
+    width:90%;
+    
+}
+
+.maincontainer{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    /* border:solid; */
+    background-color: rgb(183, 228, 252);
+    /* border-color: whitesmoke; */
+    border-width: 2px;
+    /* border-radius: 15px; */
+    justify-content: start;
+    overflow-y:auto;
+    align-items: center;
+    z-index: 2;
+    width:100%;
+    height:100%;
+}
+.button{
+    width:140px;
+    height:70px;
+    margin-bottom:15px;
+    border:solid;
+    background-color: red;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border-width: 4px;
+}
+.top{
+    padding-top:10px;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    justify-content: start;
+}
+
+.text_container{
+    
+    background-color:whitesmoke;
+    display:flex;
+    margin-bottom: 15px;
+    border: solid;
+    border-color:rgb(152, 190, 210);
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow-x:hidden;
+    border-radius:15px;
+    border-width: 4px;
+    /* border-color:rgb(41, 41, 41); */
+    width:85%;
+    height:70%;
+}
+.container{
+    background-color:whitesmoke;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width:105%;
+    padding-right:0;
+    padding-left:5%;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+.bottom{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.navigation{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:15px;
+}
+
+
+.voicenavigation{
+    height:40px;
+    background-color: rgb(86, 202, 86);
+    border-radius: 5px;
+    
+}
+
+.voicenavigationtext{
+    margin:10px;
+}
+
+@media(max-width:430px){
+    .text-display {
+        white-space: pre-wrap;
+        font-size: 16px;
+    }
+    
+    .text{
+        padding-top:15px;
+        padding-bottom:15px;
+        width:90%;
+        
+    }
+    .top{
+        padding-top:10px;
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .text_container{
+        
+        background-color:whitesmoke;
+        display:flex;
+        margin-bottom: 15px;
+        border: solid;
+        border-color:rgb(152, 190, 210);
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        overflow-x:hidden;
+        border-radius:15px;
+        border-width: 4px;
+        /* border-color:rgb(41, 41, 41); */
+        width:85%;
+        height:70%;
+    }
+    .container{
+        background-color:whitesmoke;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width:105%;
+        padding-right:0;
+        padding-left:5%;
+        overflow:scroll;
+        overflow-x:hidden;
+    }
+    .button{
+        width:120px;
+        height:55px;
+        margin-bottom:15px;
+        border:solid;
+        background-color: red;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border-width: 4px;
+    }
+    
+    .bottom{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+#webcam {
+    width: 50%; 
+    height: auto;
+    border-radius: 8px;  
+}
+
+#webcamContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    height: auto;          
+    width: 100%;            
+    position: relative;    
+    margin-bottom: 5px;
+}
+
+.textout{
+    font-size: 40px;
+}

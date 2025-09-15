@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linguify</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    
+    <div class="phone">
+        <div class="top">
+            <div class="title">
+                <h1 class="title_text" style="font-family:Arial;">Linguify</h1>
+            </div>
+            <div id="notification"></div>
+            
+            
+        </div>
+
+         <div class="text_container">
+            <div class="container">
+                <div class="text" id="textDisplay">
+                </div>
+                <script src="./js/client.js" defer></script>
+            </div>
+         </div>
+        <div class="bottom">
+            <button class="button" id="resetbutton">
+                <p style="font-weight:bold;">CLEAR</p>
+            </button>
+            <img class="micbutton" id="micbutton" src="./asset/unmute.png">
+            <img class="savebutton" id="savebutton" src="./asset/savebutton.png">
+
+        </div>
+
+        <div class="navigation">
+            <a  href="./gesture.html">
+                <button class="gesturenavigation" >
+                    <p class="gesturenavigationtext" style="font-weight:bold;">GESTURE RECOGNITION</p>
+                </button>
+            </a>
+        </div>
+        
+        
+    </div>
+    
+    <div class="phoneframe_speaker"></div>
+    <img class="phoneframe" src="./asset/phoneframe.png">
+    <div class="phoneframe_homebutton"></div>
+
+    
+    
+    
+</body>
+
+</html>
